@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>ngitung persegi</title>
 </head>
 <body>
-    
+    <div class="container">
+        <header>
+            <strong>welcome and start counting</strong>
+        </header>    
+        <h1>Kalkulator persegi</h1>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJFBMVEX///8AAACxsbENDQ1vb290dHTn5+ezs7MVFRWurq4sLCx4eHjdumzaAAABSElEQVR4nO3P0W2DUBREwQSMwdB/v2lhP660L/JMAUc6Pz8AAAAAAAAAfJH3ua3qfI8cbte+qmsbOfzsv6vaP1OH9/Faz3EPHj4joWnP4OExEpp2OEw5rHEYc1jjMOawxmHMYY3DmMMahzGHNQ5jDmscxhzWOIw5rHEYc1jjMOawxmHMYY3DmMMahzGHNQ5jDmscxhzWOIw5rHEYc1jjMOawxmHMYY3DmMMahzGHNQ5jDmscxhzWOIw5rHEYc1jjMOawxmHMYY3DmMMahzGHNQ5jDmscxhzWOIw5rHEYc1jjMOawxmHMYY3DmMMahzGHNQ5jDmscxhzWOIw5rHEYc1jjMOawxmHMYY3DmMMahzGHNQ5jDmscxhzWOIx9xeEzEpr2DB7ex2s9xz14uKqhw+3aV3VtI4fvc1vV+R45BAAAAAAAAOCf+AMg8CHNxy/zSAAAAABJRU5ErkJggg==" alt="10px">
+        <label for="sideLength">Panjang Sisi:</label>
+        <input type="number" id="sideLength" placeholder="Masukkan panjang sisi">
+        
+        <button onclick="calculate()">Hitung</button>
+
+        <div id="result">
+            <p>Luas: <span id="areaResult">0</span></p>
+            <p>Keliling: <span id="perimeterResult">0</span></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
